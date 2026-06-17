@@ -1,7 +1,7 @@
 name: Claude Code Warmup
 on:
   schedule:
-    - cron: '00 21 * * *'
+    - cron: '00 20 * * *'
   workflow_dispatch: {}
 jobs:
   warmup:
