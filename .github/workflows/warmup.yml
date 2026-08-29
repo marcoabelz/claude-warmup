@@ -1,13 +1,23 @@
 name: Claude Code Warmup
 
+# on:
+#   schedule:
+#     - cron: '0 22 * * *'
+#   workflow_dispatch: {}
+
 on:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '0 22 * * *'   # jam 05:00 WIB
+    - cron: '0 23 * * *'   # jam 06:00 WIB (backup)
   workflow_dispatch: {}
+
+# concurrency:
+#   group: claude-warmup
+#   cancel-in-progress: true
 
 concurrency:
   group: claude-warmup
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   warmup:
