@@ -7,8 +7,8 @@ name: Claude Code Warmup
 
 on:
   schedule:
-    - cron: '0 22 * * *'   # jam 05:00 WIB
-    - cron: '0 23 * * *'   # jam 06:00 WIB (backup)
+    - cron: '0 20 * * *'   # jam 05:00 WIB
+    # - cron: '0 23 * * *'   # jam 06:00 WIB (backup)
   workflow_dispatch: {}
 
 # concurrency:
